@@ -191,7 +191,7 @@ if __name__ == "__main__":
     add_parser = subparser.add_parser('add', help='Add a new entry to the note')
     add_parser.add_argument('-t','--tags', help='List of tags to add to note entry', type=lambda s: [item for item in s.split(',')], required=False)
     add_parser.add_argument('-ne','--no_editor', help='Do not open the editor', action='store_true')
-    add_parser.add_argument('-ap','--append_to_last', help='Add to the last timestamp', action='store_true')
+    add_parser.add_argument('-a','--append_to_last', help='Add to the last timestamp', action='store_true')
     add_parser.add_argument('-ml','--multiline_input', help='Multline user input', action='store_true')
     add_parser.add_argument('textentry', help='Text to add to the note', nargs='*')
 
